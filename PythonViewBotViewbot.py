@@ -7,17 +7,20 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 import sys
 from selenium import webdriver;
 
+#TikTok link
+link = https://www.tiktok.com/@bmw.the4/video/6939831613383560454
+
 #application
 def window():
     def runBot():
         #time to refresh page (seconds)
-        Timer = int(timeInput.text())
+        Timer = 3 #(3 seconds)
 
         #youtube link
         link = linkInput.text()
 
         #number of views
-        views = 1000
+        views = 100000
         
 
         driver = webdriver.Chrome('webdrivers\chromedriver.exe')
